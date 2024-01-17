@@ -1,0 +1,14 @@
+@import "header.partial.css";
+@import "common.css";
+@import "about.partial.css";
+@import "portfolio.partial.css";
+@import "contacts.partial.css";
+
+.navbar-nav > *:not(.brand) {
+            display: none;
+        }
+
+        .navbar-toggler[aria-expanded="true"] + .navbar-collapse .navbar-nav > *:not(.brand) {
+            display: block;
+        }
+

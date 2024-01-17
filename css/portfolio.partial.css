@@ -1,0 +1,67 @@
+
+.portfolio-wedding__p2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+@media (max-width: 400px) {
+    .portfolio-wedding__p2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+/* Стилі для контейнера каруселі та кнопок */
+.carousel-container__wedding,
+.carousel-container__family,
+.carousel-container__children,
+.carousel-container__lovestory{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/* Стилі для кнопок "попередній" та "наступний слайд" */
+.prev-slide, .next-slide,
+.prev-slide__family, .next-slide__family,
+.prev-slide__children, .next-slide__children,
+ .prev-slide__lovestory, .next-slide__lovestory{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent; /* Прозорий фон */
+    color: #000; /* Чорний колір тексту */
+}
+
+.prev-slide,
+.prev-slide__family,
+.prev-slide__children,
+.prev-slide__lovestory {
+    left: -40px;
+    transform: translateY(-50%) rotate(180deg); /* Повертаємо іконку на 180 градусів */
+}
+
+.next-slide,
+.next-slide__family,
+.next-slide__children,
+.next-slide__lovestory {
+    right: -40px;
+}
+
+/* Стилі для SVG-іконок всередині кнопок */
+.arrow-svg_1j4 {
+    fill: #000; /* Чорний колір іконки */
+    width: 20px; /* Розмір іконки */
+    height: 20px; /* Розмір іконки */
+}

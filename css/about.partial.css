@@ -1,0 +1,45 @@
+.about__page {
+    display: flex; /* Встановлюємо flex контейнер */
+}
+
+.about__img {
+    flex: 1; /* Займає доступний залишок простору в flex контейнері */
+    text-align: right; /* Вирівнюємо текст по правому краю */
+    padding-right: 20px; /* Додаємо відступ справа для виділення тексту від зображення */
+}
+
+.about__text {
+    flex: 1; /* Займає доступний залишок простору в flex контейнері */
+    text-align: left; /* Вирівнюємо текст по лівому краю */
+    padding-left: 20px; /* Додаємо відступ зліва для виділення тексту від зображення */
+    text-align: center;
+}
+
+.about__img img {
+    width: 100%;
+    border-radius: 500px;
+}
+.about__hello {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    }
+ .about__text p {
+        margin-bottom: 70px; /* Відступ між кожним параграфом */
+    }
+@media (max-width: 768px) {
+    .about__page {
+        flex-direction: column; /* Змінюємо напрямок на вертикальний на малих екранах */
+    }
+
+    .about__img{
+        margin-left: 20px;
+    }
+    .about__text {
+        width: 100%; /* Забезпечуємо, щоб обидва елементи займали повну ширину на малих екранах */
+    }
+    .about__text p {
+            margin-bottom: 30px;
+}
