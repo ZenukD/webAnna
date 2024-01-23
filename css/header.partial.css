@@ -1,125 +1,104 @@
-
 .header {
-    padding: 5px;
+  padding: 5px;
 }
 
 .img__header {
-    min-height: 50px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 50px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__nav {
-    color: black;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: center;
-    justify-content: space-around;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .header__nav-link {
-    color: black;
-    font-size: 1.5rem;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .header__nav-link:hover {
-position: relative;
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
 }
 
 .header__nav-link::before {
-   content: ""; /* Встановлюємо порожній контент для псевдоелементу */
-       position: absolute; /* Відносне позиціонування відносно батьківського елемента */
-       width: 0; /* Початкова ширина лінії - 0, буде збільшуватися при наведенні */
-       height: 2px; /* Товщина підкреслення */
-       bottom: 0; /* Розташовуємо лінію під текстом */
-       left: 0; /* Розташовуємо лінію від лівого краю батьківського елемента */
-       background-color: black; /* Колір підкреслення */
-       transition: width 0.7s ease-in-out; /* Додаємо анімацію для зміни ширини лінії згідно згладженою функцією ease протягом 0.3 секунди */
-   }
+  content: ""; /* Встановлюємо порожній контент для псевдоелементу */
+  position: absolute; /* Відносне позиціонування відносно батьківського елемента */
+  width: 0; /* Початкова ширина лінії - 0, буде збільшуватися при наведенні */
+  height: 2px; /* Товщина підкреслення */
+  bottom: 0; /* Розташовуємо лінію під текстом */
+  left: 0; /* Розташовуємо лінію від лівого краю батьківського елемента */
+  background-color: black; /* Колір підкреслення */
+  transition: width 0.7s ease-in-out; /* Додаємо анімацію для зміни ширини лінії згідно згладженою функцією ease протягом 0.3 секунди */
+}
 
 .header__nav-link:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 360px) {
-.header__nav-link {
+  .header__nav-link {
     font-size: 1rem;
-}
+  }
 }
 
 .photographer__title {
-    margin-top: 70px;
-    text-align: center;
-    padding: 30px;
-    display: grid;
-    gap: 5px;
-    font-size: 25px;
+  margin-top: 70px;
+  text-align: center;
+  padding: 30px;
+  display: grid;
+  gap: 5px;
+  font-size: 25px;
 }
 
-
 .photographer__text {
-    text-align: center;
-    padding: 40px;
-    display: grid;
-    gap: 5px;
-    font-size: 17px;
+  text-align: center;
+  padding: 40px;
+  display: grid;
+  gap: 5px;
+  font-size: 17px;
 }
 
 .photographer-text-p {
-    margin: 20px;
+  margin: 20px;
 }
 
 .photographer__photo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .photographer__photo img {
-    width: 100%;
+  width: 100%;
 }
 
 .photographer__next-photo {
-display: flex;
-justify-content: space-between;
-margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
 .photographer__next-photo img {
-width: 33%;
+  width: 33%;
 }
 
 @media (max-width: 768px) {
-.photographer__title {
-padding: 10px;
+  .photographer__title {
+    padding: 10px;
+  }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
-            text-align: center;
-            padding: 1em;
-            }
+  text-align: center;
+  padding: 1em;
+}
