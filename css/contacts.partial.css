@@ -2,7 +2,7 @@
     display: flex;
     }
 
-.contacts__form{
+.contacts__form-main{
     flex: 1;
     padding: 20px;
     }
@@ -41,6 +41,7 @@
 }
 
 .contacts-form {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +73,10 @@ textarea {
 
 p {
 text-align: center;
+}
+
+.contacts__text-title {
+padding-top: 50px;
 }
 
 
