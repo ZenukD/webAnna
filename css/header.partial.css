@@ -1,6 +1,6 @@
 
 .header {
-padding: 5px;
+    padding: 5px;
 }
 
 .img__header {
@@ -13,7 +13,7 @@ padding: 5px;
 }
 
 .header__nav {
-color: black;
+    color: black;
     display: flex;
     flex-direction: row;
     flex: 1;
