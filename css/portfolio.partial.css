@@ -15,7 +15,6 @@
   }
 }
 
-/* Стилі для контейнера каруселі та кнопок */
 .carousel-container__wedding,
 .carousel-container__family,
 .carousel-container__children,
@@ -25,7 +24,6 @@
   margin: auto;
 }
 
-/* Стилі для кнопок "попередній" та "наступний слайд" */
 .prev-slide,
 .next-slide,
 .prev-slide__family,
@@ -40,8 +38,8 @@
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: transparent; /* Прозорий фон */
-  color: #000; /* Чорний колір тексту */
+  background-color: transparent;
+  color: var(--black-color);
 }
 
 .prev-slide,
@@ -49,7 +47,7 @@
 .prev-slide__children,
 .prev-slide__lovestory {
   left: -40px;
-  transform: translateY(-50%) rotate(180deg); /* Повертаємо іконку на 180 градусів */
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .next-slide,
@@ -59,9 +57,35 @@
   right: -40px;
 }
 
-/* Стилі для SVG-іконок всередині кнопок */
 .arrow-svg_1j4 {
-  fill: #000; /* Чорний колір іконки */
-  width: 20px; /* Розмір іконки */
-  height: 20px; /* Розмір іконки */
+  fill: var(--black-color);
+  width: 20px;
+  height: 20px;
+}
+
+.buttons-change {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.buttons-change button {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (min-width: 800px) {
+  .buttons-change {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+  }
+  .buttons-change button {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }

@@ -1,6 +1,6 @@
  $(document).ready(function(){
         $('.portfolio-wedding__image').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -9,7 +9,7 @@
         });
 
         $('.portfolio-family__image').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -18,7 +18,7 @@
         });
 
         $('.portfolio-children__image').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -27,7 +27,7 @@
         });
 
         $('.portfolio-lovestory__image').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,

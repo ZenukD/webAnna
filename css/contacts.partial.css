@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.contacts__form-main {
+.contacts__form {
   flex: 1;
   padding: 20px;
 }
@@ -19,24 +19,24 @@
 
 @media (max-width: 768px) {
   .contacts__container {
-    flex-direction: column; /* Змінює напрямок на вертикальний на малих екранах */
+    flex-direction: column;
   }
 
   .contacts__form,
   .contacts__img {
-    width: 100%; /* Забезпечує, щоб обидва елементи займали повну ширину на малих екранах */
+    width: 100%;
   }
 }
 
 .contacts__img {
-  max-width: 100%; /* Забезпечує, що ширина зображення не буде перевищувати ширину його контейнера */
-  height: auto; /* Забезпечує пропорційні зображення, так щоб висота адаптувалась відповідно */
-  display: block; /* Виправляє можливі відступи, пов'язані з властивістю display: inline */
-  margin: auto; /* Центрує зображення в його контейнері, якщо ширина менша, ніж максимальна ширина */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 .contacts__form-form {
-  max-width: 300px; /* Максимальна ширина форми (можна налаштувати відповідно до ваших потреб) */
+  max-width: 300px;
   margin: auto;
 }
 
@@ -47,20 +47,19 @@
   align-items: center;
 }
 
-input,
-textarea {
+input, textarea {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 12px; /* Заокруглені кути */
-  width: 100%; /* Займає всю ширину контейнера */
-  box-sizing: border-box; /* Забезпечує, щоб padding і border враховувались у загальній ширині елемента */
+  border: 1px solid var(--input);
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contacts-form__button {
   padding: 10px;
-  background-color: grey;
-  color: #fff;
+  background-color: var(--form-button-background);
+  color: var(--form-button);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -68,7 +67,7 @@ textarea {
 }
 
 .contacts-form__button:hover {
-  background-color: #0056b3;
+  background-color: var(--form-button-hover);
 }
 
 p {
@@ -77,4 +76,8 @@ p {
 
 .contacts__text-title {
   padding-top: 50px;
+}
+
+.contacts-img {
+  height: 40px;
 }
