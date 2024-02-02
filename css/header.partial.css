@@ -47,9 +47,29 @@
     width: 100%;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 392px) {
+    .header__nav {
+        display: none;
+        flex-direction: column; /* Змінюємо напрямок на колонку, щоб елементи піднялися вертикально */
+        align-items: flex-start; /* Вирівнюємо елементи вліво */
+        position: relative;
+    }
+
     .header__nav-link {
         font-size: 1rem;
+    }
+
+    .header__nav:after {
+        /* Додаємо псевдоелемент, щоб створити просторовий роздільник */
+        content: "";
+        display: block;
+        height: 10px; /* Змініть це значення відповідно до вашого дизайну */
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .photographer__title {
+        margin-top: 0 !important;
     }
 }
 
