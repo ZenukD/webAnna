@@ -15,12 +15,14 @@ function showCarousel(selectedCarousel) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    carousels.forEach(carousel => {
+carousels.forEach(carousel => {
+    if (carousel.dataset.carousel === 'wedding') {
+        carousel.style.display = 'block';
+    } else {
         carousel.style.display = 'none';
-    });
-    showCarousel('wedding');
+    }
 });
+
 
 weddingChoice.addEventListener('click', () => {
     showCarousel('wedding');
