@@ -1,158 +1,156 @@
-
 .header {
-    padding: 5px;
+  padding: 5px;
 }
 
 .img__header {
-    margin-top: 40px;
-    min-height: 50px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 40px;
+  min-height: 50px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__nav {
-    color: var(--black-color);
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: center;
-    justify-content: space-around;
+  color: var(--black-color);
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .header__nav-link {
-    color: var(--black-color);
-    font-size: 1.5rem;
+  color: var(--black-color);
+  font-size: 1.5rem;
 }
 
 .header__nav-link:hover {
-    position: relative;
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
 }
 
 .header__nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--black-color);
-    transition: width 0.7s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black-color);
+  transition: width 0.7s ease-in-out;
 }
 
 .header__nav-link:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 392px) {
-    .header__nav {
-        display: none;
-        flex-direction: column; /* Змінюємо напрямок на колонку, щоб елементи піднялися вертикально */
-        align-items: flex-start; /* Вирівнюємо елементи вліво */
-        position: relative;
-    }
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
 
-    .header__nav-link {
-        font-size: 1rem;
-    }
+  .header__nav-link {
+    font-size: 1rem;
+  }
 
-    .header__nav:after {
-        /* Додаємо псевдоелемент, щоб створити просторовий роздільник */
-        content: "";
-        display: block;
-        height: 10px; /* Змініть це значення відповідно до вашого дизайну */
-        width: 100%;
-        background-color: transparent;
-    }
+  .header__nav:after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+  }
 
-    .photographer__title {
-        margin-top: 0 !important;
-    }
+  .photographer__title {
+    margin-top: 0 !important;
+  }
 }
 
 #navbar {
-    border: none;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s;
+  border: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s;
 }
 
-
-
 @media (min-width: 768px) {
-    #about, #portfolio, #contacts {
-        padding-top: 100px;
-    }
+  #about,
+  #portfolio,
+  #contacts {
+    padding-top: 100px;
+  }
 }
 
 .navbar-nav > *:not(.brand) {
-    display: none;
+  display: none;
 }
 
 .navbar-toggler[aria-expanded="true"]
-+ .navbar-collapse
-.navbar-nav
-> *:not(.brand) {
-    display: block;
+  + .navbar-collapse
+  .navbar-nav
+  > *:not(.brand) {
+  display: block;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
-    outline: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .photographer__title {
-    margin-top: 70px;
-    text-align: center;
-    padding: 30px;
-    display: grid;
-    gap: 5px;
-    font-size: 25px;
+  margin-top: 70px;
+  text-align: center;
+  padding: 30px;
+  display: grid;
+  gap: 5px;
+  font-size: 25px;
 }
 
 .photographer__text {
-    text-align: center;
-    padding: 40px;
-    display: grid;
-    gap: 5px;
-    font-size: 17px;
+  text-align: center;
+  padding: 40px;
+  display: grid;
+  gap: 5px;
+  font-size: 17px;
 }
 
 .photographer-text-p {
-    margin: 20px;
+  margin: 20px;
 }
 
 .photographer__photo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .photographer__photo img {
-    width: 100%;
+  width: 100%;
 }
 
 .photographer__next-photo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
 .photographer__next-photo img {
-    width: 33%;
+  width: 33%;
 }
 
 @media (max-width: 768px) {
-    .photographer__title {
-        padding: 10px;
-    }
+  .photographer__title {
+    padding: 10px;
+  }
 }
 
 footer {
-    text-align: center;
-    padding: 1em;
+  text-align: center;
+  padding: 1em;
 }
